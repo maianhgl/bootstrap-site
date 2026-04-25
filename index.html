@@ -3,28 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dự án Bootstrap trên GitHub</title>
-    <!-- Link Bootstrap CSS -->
-    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Test Không Có Bootstrap</title>
+    <style>
+        /* CSS thủ công để giao diện không bị quá xấu */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .my-button {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        /* Phải tự viết code để chia cột */
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .col {
+            flex: 1;
+            background: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-dark bg-primary shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">My GitHub Project</a>
-        </div>
-    </nav>
-
-    <div class="container mt-5">
-        <div class="p-5 mb-4 bg-white rounded-3 shadow-sm text-center">
-            <h1 class="display-5 fw-bold">Chào mừng bạn!</h1>
-            <p class="lead">Trang web này được xây dựng bằng Bootstrap và host trên GitHub.</p>
-            <hr class="my-4">
-            <a href="https://github.com" class="btn btn-dark btn-lg">Xem Bootstrap GitHub</a>
-        </div>
+    <div class="header">
+        <h2>Trang Web Thuần</h2>
     </div>
 
-    <!-- Link Bootstrap JS -->
-    <<script src="https://jsdelivr.net"></script>
+    <div style="margin-top: 20px;">
+        <div class="box">
+            <h1>Xin chào!</h1>
+            <p>Đây là file HTML **không** sử dụng Bootstrap.</p>
+            <button class="my-button">Nút thủ công</button>
+        </div>
+
+        <div class="row">
+            <div class="col">Cột 1</div>
+            <div class="col">Cột 2</div>
+        </div>
+
+        <p style="color: red; margin-top: 20px;">
+            * Lưu ý: Để có giao diện này, mình đã phải tự viết 30 dòng CSS. Với Bootstrap, bạn chỉ cần gọi tên class.
+        </p>
+    </div>
+
 </body>
 </html>
